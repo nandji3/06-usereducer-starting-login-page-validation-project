@@ -4,7 +4,6 @@ import Card from '../UI/Card/Card';
 import classes from './Login.module.css';
 import Button from '../UI/Button/Button';
 
-let initialState = { value: '', isValid: null };
 
 const emailReducer = (state, action) => {
   if (action.type === 'USER_INPUT') {
@@ -26,6 +25,8 @@ const passwordReducer = (state, action) => {
   return { value: '', isValid: false };  //return newState which is an object
 };
 
+
+let initialState = { value: '', isValid: null };
 const Login = (props) => {
 
   const [emailState, dispatchEmail] = useReducer(emailReducer, initialState);
