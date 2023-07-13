@@ -51,8 +51,11 @@ export default AuthContext;
 
 
 
-//isLoggedIn ---value(true/false) is updated by react useState hook when isLoggedIn change above and that new context object will be pass down to all listening component
+// isLoggedIn ---value(true/false) is updated by react useState hook when isLoggedIn change above and that new context object will be pass down to all listening component.
 
-// on react going to call createContext which take 'my-state' as argument and AuthContext itself is not a component, it is an object that would contain a component
+
+// on react going to call createContext which take 'my-state' as argument and AuthContext itself is not a component, it is an object that would contain a component.
+
 //Context is nothing but a global varaible, one which can be access through any component.
-//onLogout --> put bydefault just a dummy function for autoComplication pop
+
+//onLogout --> put by default just a dummy function for autoComplication pop. 
